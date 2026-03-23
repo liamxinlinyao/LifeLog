@@ -1,0 +1,5 @@
+{
+  "name": "LifeLog",
+  "description": "一个简洁高效的本地个人日程管理与提醒工具，支持日历视图、周视图及实时通知提醒。",
+  "requestFramePermissions": []
+}

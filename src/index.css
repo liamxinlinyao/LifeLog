@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+:root {
+  --color-primary: #10b981;
+  --color-primary-light: #ecfdf5;
+  --color-primary-dark: #059669;
+  --color-secondary: #6366f1;
+  --color-bg: #fcfcfc;
+  --color-card: #ffffff;
+  --color-text-main: #1a1c1e;
+  --color-text-muted: #8e959f;
+  --shadow-soft: 0 12px 40px -8px rgba(0, 0, 0, 0.06), 0 4px 16px -4px rgba(0, 0, 0, 0.03);
+  --shadow-glow: 0 0 30px rgba(16, 185, 129, 0.2);
+  --glass-bg: rgba(255, 255, 255, 0.85);
+  --border-color: #f8fafc;
+}
+
+.dark {
+  --color-bg: #0f172a;
+  --color-card: #1e293b;
+  --color-text-main: #f8fafc;
+  --color-text-muted: #94a3b8;
+  --shadow-soft: 0 24px 48px -12px rgba(0, 0, 0, 0.5);
+  --glass-bg: rgba(15, 23, 42, 0.85);
+  --border-color: #334155;
+  --color-primary-light: #064e3b;
+}
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  
+  --color-primary: var(--color-primary);
+  --color-primary-light: var(--color-primary-light);
+  --color-primary-dark: var(--color-primary-dark);
+  --color-secondary: var(--color-secondary);
+  --color-bg: var(--color-bg);
+  --color-card: var(--color-card);
+  --color-text-main: var(--color-text-main);
+  --color-text-muted: var(--color-text-muted);
+  
+  --shadow-soft: var(--shadow-soft);
+  --shadow-glow: var(--shadow-glow);
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text-main);
+  font-family: var(--font-sans);
+  -webkit-tap-highlight-color: transparent;
+  overflow-x: hidden;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.glass {
+  background: var(--glass-bg);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
